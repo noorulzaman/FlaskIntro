@@ -1,0 +1,36 @@
+To run application in debug mode: set FLASK_DEBUG =1
+For adding code in html : {% code_here  %}
+For addin code with html tags : {{ code_here }}
+Template inheritance to get rid of redundant code or html.
+To locate the css file : url_for() 
+For form : from FLASK_wtf: FlaskForm, from wtforms: StringField, PasswordField, SubmitField, BooleanField.
+For form validation: from wtforms.validators: DataRequired, Length, Email, EqualTO, ValidationError.
+
+Databases:
+
+SQlite for developement & Postgress for production
+
+__repr__ method how our object is printed
+
+for Date&Time import datetime module
+
+for quering in Flask
+
+User.query.all() , .first(), .filter_by(), .get(...id...)
+
+for password hashing:
+ pip install flask-bcrypt
+
+To generate password:
+bcrypt.generate_password_hash('...testing...')
+
+To check password:
+bcrypt.check_password_hash('Actual password','password to be checked')
+
+For Login:
+
+flask_login
+
+for user authentication:
+
+from flask_login import UserMixin
